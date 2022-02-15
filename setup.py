@@ -8,7 +8,7 @@ from distutils.core import setup
 from setuptools import find_packages
 
 setup_path = os.path.abspath(os.path.dirname(__file__))
-with codecs.open(os.path.join(setup_path, 'README.md'), encoding='utf-8') as f:
+with codecs.open(os.path.join(setup_path, 'README.rst'), encoding='utf-8') as f:
     README = f.read()
 
 setup(name='oc-modes',
@@ -35,7 +35,6 @@ setup(name='oc-modes',
             'pandas~=1.1.5',
             'scikit-learn~=0.24.2',
             'rpy2==3.4.5',
-            'cvxopt~=1.2.7',
       ],
       python_requires='>=3.6',
 
